@@ -1,0 +1,13 @@
+﻿@model Portafolio.Models.HomeIndex
+
+@{
+    ViewData["Title"] = "Principal";
+}
+
+<partial name="_Presentacion" />
+<partial name="_Habilidades" />
+
+@if (Model?.Proyectos != null)
+{
+    <partial name="_Proyectos" model="Model.Proyectos" />
+}

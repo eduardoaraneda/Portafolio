@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Proyecto>
+
+@if (Model is not null)
+{
+    <section class="mb-5">
+        <h2>📂 Proyectos</h2>
+
+        <!-- Proyecto 1 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5>💰 Manejo de Presupuesto</h5>
+                <p>
+                    Sistema web para la gestión de ingresos y gastos personales.
+                    Permite control financiero, categorización y reportes.
+                </p>
+                <p><strong>Tecnologías:</strong> C#, ASP.NET MVC, SQL Server</p>
+                <a href="https://github.com/eduardoaraneda/ManejoPresupuesto" target="_blank" class="btn btn-primary">
+                    Ver en GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5>🧾 Web Timbraje</h5>
+                <p>
+                    Sistema para generación y envío de documentos electrónicos (DTE),
+                    integrando servicios externos para timbraje y validación.
+                </p>
+                <p><strong>Tecnologías:</strong> C#, Web API, Integración REST</p>
+                <a href="https://github.com/eduardoaraneda/WebTimbraje" target="_blank" class="btn btn-primary">
+                    Ver en GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5>🛒 Sistema Web de Ventas</h5>
+                <p>
+                    Plataforma web para gestión de ventas, clientes y productos,
+                    incluyendo lógica de negocio y persistencia de datos.
+                </p>
+                <p><strong>Tecnologías:</strong> HTML, JavaScript, Backend integrado</p>
+                <a href="https://github.com/eduardoaraneda/SistemaWebVenta" target="_blank" class="btn btn-primary">
+                    Ver en GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5>📋 Tareas MVC</h5>
+                <p>
+                    Aplicación CRUD para gestión de tareas, con arquitectura MVC,
+                    manejo de formularios y persistencia en base de datos.
+                </p>
+                <p><strong>Tecnologías:</strong> C#, ASP.NET MVC, SQL Server</p>
+                <a href="https://github.com/eduardoaraneda/TareasMVC" target="_blank" class="btn btn-primary">
+                    Ver en GitHub
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+}
+
+<style>
+	.card-img-top {
+		width: 100%;
+		height: 200px; /* altura uniforme para todas las imágenes */
+		object-fit: cover; /* mantiene la proporción y recorta el exceso */
+		object-position: center; /* centra la imagen dentro del recorte */
+	}
+</style>
