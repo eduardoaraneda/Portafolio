@@ -13,61 +13,66 @@
 
     <style>
         body {
-            background: #0f172a;
-            color: #e2e8f0;
+            background: #f8fafc;
+            color: #1e293b;
             font-family: 'Segoe UI', sans-serif;
         }
 
         .hero {
-            padding: 100px 0;
+            padding: 80px 0;
             text-align: center;
+            background: linear-gradient(135deg, #e0f2fe, #f1f5f9);
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: bold;
         }
 
         .hero p {
-            color: #94a3b8;
+            color: #475569;
         }
 
         .btn-main {
-            background: #3b82f6;
+            background: #2563eb;
+            color: white;
             border: none;
         }
 
         .btn-main:hover {
-            background: #2563eb;
+            background: #1d4ed8;
         }
 
         .card {
-            background: #1e293b;
+            background: white;
+            border-radius: 12px;
             border: none;
-            border-radius: 15px;
-            transition: transform .3s, box-shadow .3s;
+            transition: transform .25s, box-shadow .25s;
         }
 
         .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
 
         .section-title {
-            margin-bottom: 40px;
-            font-weight: bold;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
 
         .badge-tech {
-            background: #334155;
-            margin: 3px;
+            background: #e2e8f0;
+            color: #1e293b;
+            margin: 4px;
+            padding: 6px 10px;
+            border-radius: 8px;
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 60px;
             padding: 20px;
             text-align: center;
-            color: #94a3b8;
+            color: #64748b;
         }
     </style>
 </head>
@@ -87,7 +92,7 @@
 </section>
 
 <!-- SOBRE MI -->
-<section class="container text-center mb-5">
+<section class="container text-center mt-5 mb-5">
     <h2 class="section-title">Sobre mí</h2>
     <p>
         Desarrollador con experiencia en sistemas ERP, aplicaciones web y bases de datos.
@@ -99,13 +104,13 @@
 <section class="container text-center mb-5">
     <h2 class="section-title">Tecnologías</h2>
 
-    <span class="badge badge-tech">C#</span>
-    <span class="badge badge-tech">.NET</span>
-    <span class="badge badge-tech">ASP.NET MVC</span>
-    <span class="badge badge-tech">SQL Server</span>
-    <span class="badge badge-tech">JavaScript</span>
-    <span class="badge badge-tech">TypeScript</span>
-    <span class="badge badge-tech">Bootstrap</span>
+    <span class="badge-tech">C#</span>
+    <span class="badge-tech">.NET</span>
+    <span class="badge-tech">ASP.NET MVC</span>
+    <span class="badge-tech">SQL Server</span>
+    <span class="badge-tech">JavaScript</span>
+    <span class="badge-tech">TypeScript</span>
+    <span class="badge-tech">Bootstrap</span>
 </section>
 
 <!-- PROYECTOS -->
@@ -114,7 +119,6 @@
 
     <div class="row g-4">
 
-        <!-- Proyecto 1 -->
         <div class="col-md-6 col-lg-4">
             <div class="card p-4 h-100">
                 <h5>💰 Manejo de Presupuesto</h5>
@@ -125,7 +129,6 @@
             </div>
         </div>
 
-        <!-- Proyecto 2 -->
         <div class="col-md-6 col-lg-4">
             <div class="card p-4 h-100">
                 <h5>🧾 Web Timbraje</h5>
@@ -136,7 +139,6 @@
             </div>
         </div>
 
-        <!-- Proyecto 3 -->
         <div class="col-md-6 col-lg-4">
             <div class="card p-4 h-100">
                 <h5>🛒 Sistema de Ventas</h5>
@@ -147,7 +149,6 @@
             </div>
         </div>
 
-        <!-- Proyecto 4 -->
         <div class="col-md-6 col-lg-4">
             <div class="card p-4 h-100">
                 <h5>📋 Tareas MVC</h5>
@@ -164,8 +165,15 @@
 <!-- CONTACTO -->
 <section class="container text-center mb-5">
     <h2 class="section-title">Contacto</h2>
-    <p>Email: tuemail@email.com</p>
+
     <p>
+        <i class="bi bi-envelope"></i>
+        <strong>Email:</strong> 
+        <a href="mailto:earaorellana32@hotmail.com">earaorellana32@hotmail.com</a>
+    </p>
+
+    <p>
+        <i class="bi bi-github"></i>
         <a href="https://github.com/eduardoaraneda" target="_blank">
             github.com/eduardoaraneda
         </a>
