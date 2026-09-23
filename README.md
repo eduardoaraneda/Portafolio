@@ -1,124 +1,37 @@
-# \# Portafolio
+# Eduardo Araneda · Portafolio
 
-# 
+**[Visitar el portafolio](https://eduardoaraneda.github.io/Portafolio/)**
 
-# Proyecto web ASP.NET Core con vistas Razor pensado como portafolio personal. Incluye páginas de presentación, listado de proyectos, habilidades y un formulario de contacto.
+Presentación profesional con proyectos, tecnologías, experiencia en sistemas empresariales e integraciones y datos de contacto.
 
-# 
+## Sitio publicado en GitHub Pages
 
-# \## Requisitos
+La página pública se encuentra en **`index.html`**, en la raíz. Es un sitio estático con HTML5 y CSS responsive: incluye navegación por secciones, tarjetas de proyectos, habilidades y trayectoria profesional.
 
-# 
+Para actualizar la web publicada, edita `index.html` y publica el cambio en `main`. GitHub Pages realiza el despliegue. Puedes abrir el archivo localmente en el navegador para revisar cambios. El contacto utiliza un enlace de correo; no requiere un servidor SMTP.
 
-# \- .NET 10 SDK
+## Proyecto ASP.NET Core incluido
 
-# \- Visual Studio 2022/2026 o VS Code con extensiones C#
+El repositorio también conserva una versión MVC con C#, .NET 10, vistas Razor y un servicio de correo. **GitHub Pages no ejecuta esta aplicación .NET**; las vistas Razor no son la fuente de la página pública.
 
-# 
+Para ejecutar la versión MVC, instala el SDK de .NET 10 y, desde la raíz:
 
-# \## Ejecutar localmente
+```powershell
+dotnet restore Portafolio.csproj
+dotnet build Portafolio.csproj
+dotnet run --project Portafolio.csproj
+```
 
-# 
+Abre la URL que indique la terminal. Para su formulario de contacto, configura por separado `CONFIGURACIONES_EMAIL:EMAIL`, `CONFIGURACIONES_EMAIL:CONTRASEÑA`, `CONFIGURACIONES_EMAIL:HOST` y `CONFIGURACIONES_EMAIL:PUERTO` con tu servicio SMTP.
 
-# 1\. Restaurar paquetes:
+## Proyecto destacado
 
-# 
+[Comercial Manufacturera](https://github.com/eduardoaraneda/comercial-manufacturera): cotizaciones con reserva de stock, ventas e inventario por bodega. [Demostración](https://portafolio.somee.com), con acceso autorizado.
 
-# ```powershell
+## Configuración y alcance
 
-# dotnet restore
+Usa una base de desarrollo y credenciales propias. Configura secretos mediante variables de entorno o User Secrets; no los incluyas en commits. La compilación no comprueba la disponibilidad de bases de datos, SMTP o APIs externas.
 
-# ```
+## Autor
 
-# 
-
-# 2\. Compilar:
-
-# 
-
-# ```powershell
-
-# dotnet build
-
-# ```
-
-# 
-
-# 3\. Ejecutar la aplicación:
-
-# 
-
-# ```powershell
-
-# dotnet run --project Portafolio.csproj
-
-# ```
-
-# 
-
-# Abrir la URL indicada en la salida (por ejemplo `https://localhost:5001`).
-
-# 
-
-# También puede abrir la solución en Visual Studio y ejecutar con depuración (F5).
-
-# 
-
-# \## Estructura principal
-
-# 
-
-# \- `Views/Home/` — Vistas principales: `Index`, `Proyectos`, `Contacto`, `Gracias` y parciales.
-
-# \- `wwwroot/` — Archivos estáticos (CSS, JS, imágenes).
-
-# \- `Controllers/` (si aplica) — Lógica de controladores.
-
-# 
-
-# \## Personalización
-
-# 
-
-# \- Editar las vistas en `Views/Home/` para cambiar contenidos.
-
-# \- Actualizar imágenes en `wwwroot/images`.
-
-# \- Añadir o modificar proyectos en `\_ListadoProyectos.cshtml` o en la fuente de datos correspondiente.
-
-# 
-
-# \## Publicación
-
-# 
-
-# Publicar en Release y subir la carpeta `publish` al host:
-
-# 
-
-# ```powershell
-
-# dotnet publish -c Release -o ./publish
-
-# ```
-
-# 
-
-# Se puede desplegar en Azure App Service, IIS o en contenedor Docker.
-
-# 
-
-# \## Contribuciones
-
-# 
-
-# Pull requests y issues pequeñas para mejorar el contenido o accesibilidad son bienvenidas.
-
-# 
-
-# \## Licencia
-
-# 
-
-# Agregar un archivo `LICENSE` si desea establecer una licencia (por ejemplo MIT).
-
+[Eduardo Araneda](https://github.com/eduardoaraneda) · [Portafolio](https://eduardoaraneda.github.io/Portafolio/)
