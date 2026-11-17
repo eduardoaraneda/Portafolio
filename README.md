@@ -24,6 +24,22 @@ dotnet run --project Portafolio.csproj
 
 Abre la URL que indique la terminal. Para su formulario de contacto, configura por separado `CONFIGURACIONES_EMAIL:EMAIL`, `CONFIGURACIONES_EMAIL:CONTRASEÑA`, `CONFIGURACIONES_EMAIL:HOST` y `CONFIGURACIONES_EMAIL:PUERTO` con tu servicio SMTP.
 
+## Cómo orientarse en este repositorio
+
+| Quiero… | Archivo o carpeta |
+| --- | --- |
+| Actualizar la web pública | `index.html` en la raíz |
+| Ejecutar la aplicación MVC local | `Portafolio.csproj` |
+| Cambiar páginas de la aplicación MVC | `Views/` |
+
+Son dos presentaciones diferentes: los cambios en Razor no actualizan GitHub Pages.
+
+## Proyectos destacados
+
+[WebRetail](https://github.com/eduardoaraneda/WebRetail): ventas, inventario y cuadratura diaria con .NET 11. Incluye una captura, instrucciones de ejecución y verificaciones de integración.
+
+[Mesa de diario](https://github.com/eduardoaraneda/RecetarioPortfolio): buscador de recetas con Angular y API REST en ASP.NET Core.
+
 ## Proyecto destacado
 
 [Comercial Manufacturera](https://github.com/eduardoaraneda/comercial-manufacturera): cotizaciones con reserva de stock, ventas e inventario por bodega. [Demostración](https://portafolio.somee.com), con acceso autorizado.
